@@ -57,8 +57,8 @@ const myTheme = {
   ...PaperDefaultTheme,
   colors: {
     ...PaperDefaultTheme.colors,
-    primary: "#8c78e2",
-    secondary: "#ff7a5c",
+    primary: "#ff7a5c",
+    secondary: "#8c78e2",
     background: "#ffffff",
     surface: "#ffffff",
     text: "#000000",

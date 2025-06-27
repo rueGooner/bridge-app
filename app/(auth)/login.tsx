@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   View,
   StyleSheet,
@@ -51,10 +51,10 @@ export default function Login() {
       const result = await response.json();
       await AsyncStorage.setItem("token", result.accessToken);
 
-      if (result.registrationStep === "COMPLETE_FAMILY") {
+      if (result.registrationStep === "CREATE_FAMILY") {
         router.push("/dependents/add");
       } else {
-        router.push("/(tabs)/home");
+        router.push("/(tabs)");
       }
     } catch (error) {
       console.error("Network error:", error);
